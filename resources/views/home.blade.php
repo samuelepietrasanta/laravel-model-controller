@@ -8,11 +8,17 @@
 </head>
 <body>
 
-<h1>Home</h1>
+<h1 class="titolo">TITOLO</h1>
 
 @foreach ($movies as $movie)
 
+<div class="card">
 <h2> {{$movie -> title}}</h2>
+<h4>{{$movie -> original_title}}</h4>
+
+</div>
+
+
 @endforeach
 
 
